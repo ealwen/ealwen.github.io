@@ -23,6 +23,8 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
+
+
       - name: Deploy
         env:
           SSH_ID_RSA: ${{ secrets.HEXO_DEPLOY_PRI }}
@@ -34,4 +36,14 @@ jobs:
           # 下面这两行建议改成你的 GitHub 信息，或者保持这样（只要邮箱格式对就行）
           git config --global user.name "ealwen"
           git config --global user.email "ealwen@example.com"
+          npx hexo clean
+          npx hexo generate
           npx hexo deploy
+
+
+
+
+
+
+
+        
