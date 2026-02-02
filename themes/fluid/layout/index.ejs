@@ -8,28 +8,36 @@ page.banner_mask_alpha = theme.index.banner_mask_alpha
 %>
 
 <h1 style="display: none"><%= config.title %></h1>
+
 <% page.posts.each(function (post) { %>
   <div class="row mx-auto index-card">
-    <% var post_url = url_for(post.path), index_img = post.index_img || theme.post.default_index_img %>
+    <%# --- 修改点 1: 定义跳转逻辑，优先取外链 --- %>
+    <% var post_url = post.external_link || url_for(post.path) %>
+    <% var target_type = post.external_link ? '_blank' : '_self' %>
+    <% var index_img = post.index_img || theme.post.default_index_img %>
+
     <% if (index_img) { %>
       <div class="col-12 col-md-4 m-auto index-img">
-        <a href="<%= post_url %>" target="<%- theme.index.post_url_target %>">
+        <a href="<%= post_url %>" target="<%= target_type %>">
           <img src="<%= url_for(index_img) %>" alt="<%= post.title %>">
         </a>
       </div>
     <% } %>
+
     <article class="col-12 col-md-<%= index_img ? '8' : '12' %> mx-auto index-info">
       <h2 class="index-header">
         <% if (theme.index.post_sticky && theme.index.post_sticky.enable && post.sticky > 0) { %>
           <i class="index-pin <%= theme.index.post_sticky && theme.index.post_sticky.icon %>" title="Pin on top"></i>
         <% } %>
-        <a href="<%= post_url %>" target="<%- theme.index.post_url_target %>">
+        <%# --- 修改点 2: 标题跳转逻辑 --- %>
+        <a href="<%= post_url %>" target="<%= target_type %>">
           <%= post.title %>
         </a>
       </h2>
 
       <% var excerpt = post.description || post.excerpt || (theme.index.auto_excerpt.enable && !post.encrypt && post.content) %>
-      <a class="index-excerpt <%= index_img ? '' : 'index-excerpt__noimg' %>" href="<%= post_url %>" target="<%- theme.index.post_url_target %>">
+      <%# --- 修改点 3: 摘要跳转逻辑 --- %>
+      <a class="index-excerpt <%= index_img ? '' : 'index-excerpt__noimg' %>" href="<%= post_url %>" target="<%= target_type %>">
         <div>
           <%- strip_html(excerpt).substring(0, 200).trim().replace(/\n/g, ' ') %>
         </div>
