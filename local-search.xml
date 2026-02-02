@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="/2026/02/02/hello-world/"/>
+    <url>/2026/02/02/hello-world/</url>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a>  </p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>测试一下笔记功能</title>
+    <link href="/2024/05/20/%E6%B5%8B%E8%AF%95%E4%B8%80%E4%B8%8B%E7%AC%94%E8%AE%B0%E5%8A%9F%E8%83%BD/"/>
+    <url>/2024/05/20/%E6%B5%8B%E8%AF%95%E4%B8%80%E4%B8%8B%E7%AC%94%E8%AE%B0%E5%8A%9F%E8%83%BD/</url>
+    
+    <content type="html"><![CDATA[<h2 id="1-研究背景"><a href="#1-研究背景" class="headerlink" title="1. 研究背景"></a>1. 研究背景</h2><p>这是一篇带数学公式的学术笔记。</p><h2 id="2-核心公式"><a href="#2-核心公式" class="headerlink" title="2. 核心公式"></a>2. 核心公式</h2><p>我们可以展示一个复杂的公式，比如正态分布的概率密度函数：</p><p>$$<br>f(x) &#x3D; \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2}<br>$$</p><h2 id="3-结论"><a href="#3-结论" class="headerlink" title="3. 结论"></a>3. 结论</h2><p>通过上述公式 $f(x)$，我们可以进行后续推导。</p><h1 id="3-1-小标题"><a href="#3-1-小标题" class="headerlink" title="3.1 小标题"></a>3.1 小标题</h1><p>我们主要证明一般情况，对于$\R^n$上的特殊情况，因为$\R^n$上的任意集合可以用开集从外部任意逼近，亦可以用一个闭集从内部任意逼近。基于这个事实，我们只要把一般场景下找到的那个集合F用一个其内部的闭子集代替即可。（如应用一般情况结论，可以找到子集F与A测度差$\epsilon&#x2F;2$,又可以找到F的闭子集与F测度差$\epsilon&#x2F;2$，因而这个闭子集与A测度差$\epsilon$,且继承一致收敛性。）下面的证明过程是标准的做法（套路）。</p><p>围绕收敛性的概念（的翻译）我们构造集合$B_k(j):&#x3D;\bigcap_{m&#x3D;k}^\infty {x\in A ,: ,|f_m(x)|&lt;1&#x2F;j }$.</p><p>设集合$A’&#x3D;A\setminus Z$恰为 $f_i\to f$且有限的对应的集合,其中$\mu(Z)&#x3D;0$, $\mu(A)&#x3D;\mu(A’)$. 对$\forall x\in A’ $,取$\epsilon&#x3D;1&#x2F;j$, 存在$N_{x,j}$,当$n\geq N_{x,j}$时 $|f(x)-f_n(x)|&lt;1&#x2F;j$. 写成集合形式有$ A’\subset \bigcup_{k&#x3D;1}^\infty\bigcap_{m&#x3D;k}^\infty {|f(x)-f_m(x)|&lt;1&#x2F;j}$. 因而$A’&#x3D; \bigcup_{k&#x3D;1}^\infty\bigcap_{m&#x3D;k}^\infty {|f(x)-f_m(x)|&lt;1&#x2F;j}$.</p><p>注意到$B_k(j)$随着k增大而增大,且极限正好为$A’$，正好可以应用上述引理，有$\mu(B_k(j))\uparrow_k \mu(A’)&#x3D;\mu(A)$. 应用数列极限的定义，我们有对任意$2^{-j}\epsilon$,存在$k_j$, 使得 $\mu(B_{k_j}(j))&gt;\mu(A)-2^{-j}\epsilon$,即$\mu(A\setminus B_{k_j}(j))&lt;2^{-j}\epsilon$.</p><p>最后我们声明$F&#x3D;\bigcap_{j&#x3D;1}^\infty B_{k_j}(j)$就是我们要找的集合：</p><p>一方面 $\mu(A\setminus F) &#x3D; \mu(\bigcup_{j&#x3D;1}^\infty A\setminus B_{k_j}(j))&lt; \sum_{j&#x3D;1}^\infty 2^{-j}\epsilon&#x3D;\epsilon $.</p><p>另一方面$F&#x3D;\bigcap_{j&#x3D;1}^\infty B_{k_j}(j)$,即$\forall j$, $F\subset B_{k_j}(j)$ ,即$F\subset \bigcap_{k&#x3D;k_j}^{\infty}{|f_k(x)-f(x)|&lt;1&#x2F;j}$. 翻译过来有$ \forall j$,都存$k_j$, 当 $n&gt; k_j$时，对任意$x\in F$,有$|f_n(x)-f(x)|&lt;1&#x2F;j$. 这正是一致收敛之定义。</p><hr>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>学术</tag>
+      
+      <tag>数学</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  
+</search>
