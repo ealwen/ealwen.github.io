@@ -101,4 +101,6 @@ theme: fluid
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repo: git@github.com:ealwen/ealwen.github.io.git
+  branch: gh-pages # 注意：这里建议改成 gh-pages 分支，用于存放生成的网页
