@@ -11,10 +11,18 @@
     <content type="html"><![CDATA[<p><a href="/files/OT_note.pdf">OT_note</a></p>]]></content>
     
     
+    <categories>
+      
+      <category>应用数学学习笔记</category>
+      
+      <category>最优传输</category>
+      
+    </categories>
+    
     
     <tags>
       
-      <tag>学术</tag>
+      <tag>最优传输</tag>
       
       <tag>数学</tag>
       
@@ -37,9 +45,9 @@
     
     <tags>
       
-      <tag>学术</tag>
-      
       <tag>数学</tag>
+      
+      <tag>学术</tag>
       
     </tags>
     
